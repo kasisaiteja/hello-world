@@ -1,0 +1,69 @@
+<mvc:View controllerName="HelloWorld.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form">
+	<App id="HelloWorld">
+		<pages>
+			<Page title="SAPUI5 Data Base Application">
+				<l:VerticalLayout
+				class="sapUiContentPadding"
+				width="100%">
+					<l:content>	
+						<l:HorizontalLayout
+							class="sapUiContentPadding">
+								<Image 
+									src="view/sapui5.jpg"
+									alt="sapui5 Image">
+								</Image>
+								<Image  
+									src="view/sapui5.jpg"
+									alt="sapui5 Image">
+								</Image>
+								<Image  
+									src="view/sapui5.jpg"
+									alt="sapui5 Image">
+								</Image>
+								<Image  
+									src="view/sapui5.jpg"
+									alt="sapui5 Image">
+								</Image>
+								<Image  
+									src="view/sapui5.jpg"
+									alt="sapui5 Image">
+								</Image>
+								</l:HorizontalLayout>
+								
+								<Label text="First Name" labelFor="input-a"/>
+								<Input id="input-fname" required="true"/>
+								
+								<Label text="Last Name" labelFor="input-b"/>
+								<Input id="input-lname" required="true"/>
+								
+								<Label text="Gender" labelFor="nameInput"/>
+								<l:HorizontalLayout>
+								<CheckBox id="cb1" select = "checkDone1" text="Male"></CheckBox>
+								<CheckBox id="cb2" select = "checkDone2" text="Female"></CheckBox>		
+								</l:HorizontalLayout>
+								<Button 
+									text="Select"
+									press="onPress">
+								</Button>
+								<Button 
+									text="Continue"
+									press="onPressContinue">
+								</Button>
+								<ObjectListItem
+										title="Enter the New World"
+										type="Navigation"
+										press="onObjectListItemPress">
+								</ObjectListItem>
+						</l:content>
+				</l:VerticalLayout>	
+				
+									
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

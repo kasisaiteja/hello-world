@@ -36,26 +36,37 @@
 								</l:HorizontalLayout>
 								
 								<Label text="First Name" labelFor="input-a"/>
-								<Input id="input-fname" required="true"/>
+								<Input id="input-fname" 
+								required="true" 
+								class="sapUiSmallMarginBottom"
+								placeholder="Enter First Name ..." />
 								
 								<Label text="Last Name" labelFor="input-b"/>
-								<Input id="input-lname" required="true"/>
+								<Input id="input-lname" 
+								required="true"
+								class="sapUiSmallMarginBottom"
+								placeholder="Enter Last Name ..." />
+								
+								<Label text="E-mail" labelFor="input-c"/>
+								<Input id="input-address" 
+								required="true"
+								class="sapUiSmallMarginBottom"
+								placeholder="Enter E-mail Address ..." />
 								
 								<Label text="Gender" labelFor="nameInput"/>
 								<l:HorizontalLayout>
 								<CheckBox id="cb1" select = "checkDone1" text="Male"></CheckBox>
 								<CheckBox id="cb2" select = "checkDone2" text="Female"></CheckBox>		
+								
 								</l:HorizontalLayout>
-								<Button 
-									text="Select"
-									press="onPress">
-								</Button>
+								
 								<Button 
 									text="Continue"
 									press="onPressContinue">
 								</Button>
+								
 								<ObjectListItem
-										title="Enter the New World"
+										title="This is object list item to navigate"
 										type="Navigation"
 										press="onObjectListItemPress">
 								</ObjectListItem>

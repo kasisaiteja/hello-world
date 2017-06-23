@@ -23,12 +23,6 @@ sap.ui.define([
 		}
 	},
 	
-	onPress: function(){
-		// onPress event handler method of the button 
-		jQuery.sap.require("sap.m.MessageBox");
-		sap.m.MessageBox.alert("Selected !!");
-	},
-	
 	onObjectListItemPress: function (oEvent) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("NewView");
@@ -39,7 +33,8 @@ sap.ui.define([
 			var view = this.getView();
 			var inputs = [
 				view.byId("input-fname"),
-				view.byId("input-lname")
+				view.byId("input-lname"),
+				view.byId("input-address")
 			];
 			
 			// check that inputs are not empty
@@ -62,7 +57,7 @@ sap.ui.define([
 			// output result
 			if (canContinue) {
 				jQuery.sap.require("sap.m.MessageToast");
-				sap.m.MessageToast.show("The input is correct. You could now continue to the next screen." + inputs[0].getValue());
+				sap.m.MessageToast.show("Welcome "+ inputs[0].getValue() + "The final product will be sent to " + inputs[2].getValue());
 			} else {
 				jQuery.sap.require("sap.m.MessageBox");
 				sap.m.MessageBox.alert("Complete your input first." + inputs[0]);
